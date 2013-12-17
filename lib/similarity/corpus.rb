@@ -1,4 +1,4 @@
-require 'gsl'
+require 'gslng'
 
 class Corpus
   attr_reader :terms, :documents
