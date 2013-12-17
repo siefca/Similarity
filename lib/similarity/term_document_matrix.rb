@@ -4,7 +4,7 @@ class TermDocumentMatrix
   attr_reader :matrix, :labels, :number_of_terms, :number_of_documents, :non_zeros
 
   def initialize(corpus)
-    @matrix = GSLng::Matrix.alloc(corpus.terms.size, corpus.document_count)
+    @matrix = GSLng::Matrix.new(corpus.terms.size, corpus.document_count)
     @non_zeros = 0
     @number_of_terms = corpus.terms.size
     @number_of_documents = corpus.documents.size
